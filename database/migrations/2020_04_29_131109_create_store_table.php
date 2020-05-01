@@ -20,7 +20,6 @@ class CreateStoreTable extends Migration
             
             $table->string('name');
             $table->string('description');
-            $table->integer('qtd');
             $table->string('phone');
             $table->string('mobile_phone');
             $table->string('slug');

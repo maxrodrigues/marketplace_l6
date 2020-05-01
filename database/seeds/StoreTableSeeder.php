@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Models\Store;
+use App\Models\Product;
 
 class StoreTableSeeder extends Seeder
 {
@@ -11,6 +13,9 @@ class StoreTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $stores = Store::all();
+        foreach($stores as $store){
+            $store->storeProducts()->save(factory(Product::class)->make());
+        }
     }
 }
