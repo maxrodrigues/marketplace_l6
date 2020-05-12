@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<a href="{{ route('admin.stores.create') }}" class="btn btn-success">Criar Loja</a>
+<a href="{{ route('admin.stores.create') }}" class="btn btn-success" style="margin:10px;">Criar Loja</a>
 <table class="table table-striped">
     <thead>
         <tr>
